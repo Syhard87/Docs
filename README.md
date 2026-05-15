@@ -21,13 +21,15 @@ ReverseProxy : 172.20.10.10
     |-- web2.fr      -> Web1 : 172.20.10.11
     |-- www.web1.fr  -> Web2 : 172.20.10.12
     |-- www.web2.fr  -> Web2 : 172.20.10.12
-Plan d'adressage
-Machine	Rôle	IP
-ReverseProxy	Reverse proxy Apache	172.20.10.10/28
-Web1	Serveur Apache/PHP pour web1.fr et web2.fr	172.20.10.11/28
-Web2	Serveur Apache/PHP pour www.web1.fr et www.web2.fr	172.20.10.12/28
-Passerelle	Réseau local	172.20.10.1
-DNS	Résolution DNS	8.8.8.8
+```
+| Machine | Rôle | IP |
+|---|---|---|
+| ReverseProxy | Reverse proxy Apache | `172.20.10.10/28` |
+| Web1 | Serveur Apache/PHP pour `web1.fr` et `web2.fr` | `172.20.10.11/28` |
+| Web2 | Serveur Apache/PHP pour `www.web1.fr` et `www.web2.fr` | `172.20.10.12/28` |
+| Passerelle | Réseau local | `172.20.10.1` |
+| DNS | Résolution DNS | `8.8.8.8` |
+
 Configuration VirtualBox
 
 Pour les 3 VM :
